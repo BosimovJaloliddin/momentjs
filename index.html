@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <title>MomentJS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="format">
+            <h1 class="format-title">Format Dates</h1>
+            <div class="format-dates_items">
+                <div class="format-dates_item">
+                    <div class="code">moment().format('MMMM Do YYYY, h:mm:ss a')</div>
+                    <div class="code-title code-one">// July 9th 2023, 3:09:55 pm</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().format('dddd')</div>
+                    <div class="code-title code-two">// Sunday</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().format("MMM Do YY")</div>
+                    <div class="code-title code-there">// Jul 9th 23</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().format('YYYY [escaped] YYYY')</div>
+                    <div class="code-title code-four">// 2023 escaped 2023</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().format()</div>
+                    <div class="code-title code-five">// 2023-07-09T15:16:18+05:00</div>
+                </div>
+            </div>
+            <h1 class="format-title">Relative Time</h1>
+            <div class="format-dates_items">
+                <div class="format-dates_item">
+                    <div class="code">moment("20111031", "YYYYMMDD").fromNow();</div>
+                    <div class="code-title code-one">// 12 years ago</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment("20120620", "YYYYMMDD").fromNow();
+                    </div>
+                    <div class="code-title code-two">// 11 years ago</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().startOf('day').fromNow();</div>
+                    <div class="code-title code-there">// 12 hours ago</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().endOf('day').fromNow();</div>
+                    <div class="code-title code-four">// in 12 hours</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().startOf('hour').fromNow();</div>
+                    <div class="code-title code-five">// 15 minutes ago</div>
+                </div>
+            </div>
+            <h1 class="format-title">Calendar Time</h1>
+            <div class="format-dates_items">
+                <div class="format-dates_item">
+                    <div class="code">moment().subtract(10, 'days').calendar();</div>
+                    <div class="code-title calendar-one">// 06/30/2023</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().subtract(6, 'days').calendar();
+                    </div>
+                    <div class="code-title calendar-two">// Last Tuesday at 12:43 PM</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().subtract(3, 'days').calendar();</div>
+                    <div class="code-title calendar-there">// Last Friday at 12:43 PM</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().subtract(1, 'days').calendar();</div>
+                    <div class="code-title calendar-four">// Yesterday at 12:44 PM</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().calendar();</div>
+                    <div class="code-title calendar-five">// Today at 12:44 PM</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().add(1, 'days').calendar();</div>
+                    <div class="code-title calendar-six">// Tomorrow at 12:45 PM</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().add(3, 'days').calendar();</div>
+                    <div class="code-title calendar-eight">// Thursday at 12:45 PM</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().add(10, 'days').calendar();</div>
+                    <div class="code-title calendar-nine">// 07/20/2023</div>
+                </div>
+            </div>
+            <h1 class="format-title">Multiple Locale Support</h1>
+            <div class="format-dates_items">
+                <div class="format-dates_item">
+                    <div class="code">moment.locale()</div>
+                    <div class="code-title calendar-one">// en</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().format('LT');</div>
+                    <div class="code-title calendar-two">// 4:44 PM</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().format('LTS');</div>
+                    <div class="code-title calendar-there">// 4:45:15 PM</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().format('L');</div>
+                    <div class="code-title calendar-four">// 07/10/2023</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().format('l');</div>
+                    <div class="code-title calendar-five">// 7/10/2023</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().format('LL');</div>
+                    <div class="code-title calendar-six">// July 10, 2023</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().format('ll');</div>
+                    <div class="code-title calendar-eight">// Jul 10, 2023</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().format('LLL');</div>
+                    <div class="code-title calendar-nine">// July 10, 2023 4:46 PM</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().format('lll');</div>
+                    <div class="code-title calendar-nine">// Jul 10, 2023 4:46 PM</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().format('LLLL');</div>
+                    <div class="code-title calendar-nine">// Monday, July 10, 2023 4:48 PM</div>
+                </div>
+                <div class="format-dates_item">
+                    <div class="code">moment().format('llll');</div>
+                    <div class="code-title calendar-nine">// Mon, Jul 10, 2023 4:48 PM</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="time"></div>
+</body>
+<script src="./moment.js"></script>
+
+</html>

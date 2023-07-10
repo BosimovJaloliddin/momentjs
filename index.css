@@ -1,0 +1,80 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+.format {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.format-title {
+  font-size: 24px;
+  font-weight: 400;
+}
+.format-dates_items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 720px;
+  border: 1px solid #8888;
+  border-radius: 5px;
+  padding: 12px 10px;
+  background: rgb(248, 248, 248);
+}
+.format-dates_item {
+  display: flex;
+  justify-content: space-between;
+}
+.code {
+  flex: 1;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+}
+.code-title {
+  flex: 1;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(141, 141, 141);
+}
+
+.get-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 12px;
+}
+.input-format {
+  width: 380px;
+  height: 28px;
+  outline: none;
+  padding-left: 12px;
+}
+.button-format {
+  width: 120px;
+  height: 32px;
+  border: none;
+  background: blue;
+  color: #fff;
+  cursor: pointer;
+}
+.button-format:active {
+  transform: scale(0.95);
+}
+/* .add-date_info {
+  display: flex;
+  align-items: center;
+  width: 518px;
+  height: 30px;
+  margin-top: 12px;
+  padding: 5px 10px;
+  border: 1px solid #888;
+} */
