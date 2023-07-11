@@ -1,3 +1,5 @@
+let addCode = document.querySelector(".add-code");
+let getCode = document.querySelector(".get-code");
 let date = new Date();
 
 const month = [
@@ -108,6 +110,7 @@ const moment = () => {
       month[date.getMonth()]
     }`.slice(0, 4)} ${dat}, ${year} ${hur}:${setMin} PM`,
   };
+
   return {
     format(key) {
       let arr = key?.split(" ");
@@ -173,26 +176,3 @@ const moment = () => {
     },
   };
 };
-
-console.log(moment().locale());
-console.log(moment().format("LT"));
-console.log(moment().format("LTS"));
-console.log(moment().format("L"));
-console.log(moment().format("l"));
-console.log(moment().format("LL"));
-console.log(moment().format("ll"));
-console.log(moment().format("LLL"));
-console.log(moment().format("lll"));
-console.log(moment().format("LLLL"));
-console.log(moment().format("llll"));
-
-// let sc = date.getSeconds();
-// setInterval(() => {
-//   console.log(sc);
-//   document.querySelector(".time").innerHTML = `<span>${(sc += 1)}</span>`;
-// }, 1000);
-
-// console.log((date.getTime() - 20111031) / 365 / 24 / 60 / 60 / 100);
-
-// console.log(date.getTimezoneOffset());
-// console.log(date.getDate());

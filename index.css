@@ -200,12 +200,31 @@ body {
 .button-format:active {
   transform: scale(0.95);
 }
-/* .add-date_info {
+
+/* add-info style */
+.get-info {
+  max-width: 940px;
   display: flex;
-  align-items: center;
-  width: 518px;
-  height: 30px;
-  margin-top: 12px;
-  padding: 5px 10px;
-  border: 1px solid #888;
-} */
+  justify-content: center;
+  gap: 20px;
+  margin: 32px auto;
+}
+.add-code {
+  flex: 5;
+  width: 100%;
+  height: 26px;
+  outline: none;
+}
+.get-code {
+  flex: 1;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  background: blue;
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.get-code:active {
+  transform: scale(0.97);
+}
